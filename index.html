@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rafão Faltas</h1>
+
+    <div class="img"></div>
+
+    <h3>App para verificar quantas faltar pode se ter pelo tempo da UC.</h3>
+  
+    <div class="container-input">
+      <input id="hours-input" type="number" placeholder="Digite algo" />
+      <button id="" onclick="verifyMissing()">Verificar</button>
+    </div>
+
+
+    <h4 id="message">De acordo com rafão testes, Você pode ter <span> 14 faltas</span></h4>
+
+    <script>
+
+      const verifyMissing = () => {
+        const valorDoInput = document.getElementById("hours-input").value;
+        const message = document.querySelector("#message");
+        const spanMessage = document.querySelector("#message > span")
+
+        const hoursMissing = valorDoInput * 25 / 100;
+
+        let days = hoursMissing / 3.3
+
+        message.style.display = "block";
+        spanMessage.innerHTML = `${Math.floor(days)} faltas`
+
+        setTimeout(() => {
+          message.style.display = "none";
+        }, 3000)
+      }
+
+    </script>
+
+    
+</body>
+</html>

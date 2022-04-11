@@ -1,0 +1,60 @@
+body {
+    background-color: #FF7F00;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+}
+
+input {
+    width: 230px;
+    height: 31px;
+    border-radius: 10px 0px 0px 10px;
+    border: none ;
+    padding-left: 20px;
+}
+
+button {
+    width: 220px;
+    height: 33px;
+    border: none;
+    color: #fff;
+    border: 1px solid white;
+
+    background-color: #004687;
+    border-radius: 0px 10px 10px 0px;
+}
+
+button:hover {
+    background-color: #04315c;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.171);
+    margin: auto;
+}
+
+.container-input {
+    display: flex;
+    justify-content: center;
+}
+
+#message {
+    color: white;
+    text-align: center;
+    display: none;
+}
+
+#message span {
+    color: red ;
+}
